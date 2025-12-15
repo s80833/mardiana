@@ -48,6 +48,13 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    /* Subtle hover zoom */
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
     }
 
     .card h2 {
@@ -82,6 +89,10 @@
     }
 
     .hobby {
+      grid-column: span 1;
+    }
+
+    .reflection {
       grid-column: span 1;
     }
 
@@ -140,6 +151,7 @@
       .tech,
       .case-study,
       .hobby,
+      .reflection,
       .playlist {
         grid-column: span 1;
       }
@@ -158,9 +170,9 @@
         <div class="tagline">From Soil to Solution.</div>
       </div>
       <div class="socials">
-        <a href="#">LinkedIn</a>
-        <a href="#">GitHub</a>
-        <a href="#">UMT Portal</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">UMT Portal</a>
       </div>
     </div>
 
@@ -198,11 +210,25 @@
       <p>Evening walks at Pantai UMT</p>
     </div>
 
-    <!-- Card 6: Playlist -->
+    <!-- Card 6: Reflection -->
+    <div class="card reflection">
+      <h2>Water Smart, Yield Strong</h2>
+      <p>
+        Soil moisture-based irrigation improves water efficiency and chilli productivity.
+        Using soil moisture sensors, irrigation was optimized to reduce water use while
+        improving chilli crop yield.
+      </p>
+    </div>
+
+    <!-- Card 7: Playlist -->
     <div class="card playlist">
       <h2>Study Playlist</h2>
       <p>
-        Placeholder for a calming ocean-themed study playlist or embedded music player.
+        <iframe style="border-radius:12px"
+src="https://open.spotify.com/embed/playlist/0vvXsWCC9xrXsKd4FyS8kM?ut
+m_source=generator&theme=0" width="100%" height="152" frameBorder="0"
+allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media;
+fullscreen; picture-in-picture" loading="lazy"></iframe>
       </p>
     </div>
 
