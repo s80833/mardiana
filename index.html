@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nur Mardiana | Student Landing Page</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-main: #f7f9fb;
+      --bg-card: #ffffff;
+      --text-primary: #1f2933;
+      --text-secondary: #6b7280;
+      --accent: #0b5ed7; /* Ocean Blue */
+      --border-soft: #e5e7eb;
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-main);
+      color: var(--text-primary);
+      padding: 24px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      padding: 20px;
+      border: 1px solid var(--border-soft);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card h2 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* Card Layout */
+    .profile {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .location {
+      grid-column: span 1;
+    }
+
+    .tech {
+      grid-column: span 1;
+      grid-row: span 2;
+    }
+
+    .case-study {
+      grid-column: span 1;
+    }
+
+    .hobby {
+      grid-column: span 1;
+    }
+
+    .playlist {
+      grid-column: span 4;
+    }
+
+    /* Profile Styling */
+    .profile h1 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .profile .meta {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+
+    .tagline {
+      margin-top: 14px;
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--accent);
+    }
+
+    .socials {
+      margin-top: 18px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .socials a {
+      font-size: 0.85rem;
+      text-decoration: none;
+      color: var(--accent);
+      border: 1px solid var(--border-soft);
+      padding: 6px 12px;
+      border-radius: 8px;
+      transition: background 0.2s ease;
+    }
+
+    .socials a:hover {
+      background: var(--bg-main);
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .profile,
+      .location,
+      .tech,
+      .case-study,
+      .hobby,
+      .playlist {
+        grid-column: span 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Card 1: Profile -->
+    <div class="card profile">
+      <div>
+        <h1>Nur Mardiana Binti Amrang</h1>
+        <div class="meta">Science Agrotechnology · Year 1</div>
+        <div class="tagline">From Soil to Solution.</div>
+      </div>
+      <div class="socials">
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+        <a href="#">UMT Portal</a>
+      </div>
+    </div>
+
+    <!-- Card 2: Location -->
+    <div class="card location">
+      <h2>Location</h2>
+      <p>Universiti Malaysia Terengganu</p>
+      <p>Kuala Nerus</p>
+    </div>
+
+    <!-- Card 3: Subjects -->
+    <div class="card tech">
+      <h2>Current Subjects</h2>
+      <p>• Sains Tanah Asas</p>
+      <p>• Mikrobiologi Pertanian</p>
+      <p>• Sistem Komputer dan Aplikasi</p>
+      <p>• Asas Kecergasan Fizikal</p>
+      <p>• Asas Keusahawanan</p>
+      <p>• Falsafah dan Isu Semasa</p>
+      <p>• Integriti dan Anti Rasuah</p>
+    </div>
+
+    <!-- Card 4: Case Study -->
+    <div class="card case-study">
+      <h2>Case Study</h2>
+      <p><strong>Smart Irrigation in Chilli Cultivation</strong></p>
+      <p>
+        Smart irrigation improved water efficiency and chilli yield using soil moisture data.
+      </p>
+    </div>
+
+    <!-- Card 5: Hobby -->
+    <div class="card hobby">
+      <h2>Hobby</h2>
+      <p>Evening walks at Pantai UMT</p>
+    </div>
+
+    <!-- Card 6: Playlist -->
+    <div class="card playlist">
+      <h2>Study Playlist</h2>
+      <p>
+        Placeholder for a calming ocean-themed study playlist or embedded music player.
+      </p>
+    </div>
+
+  </div>
+
+</body>
+</html>
