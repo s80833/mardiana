@@ -50,6 +50,23 @@
       justify-content: space-between;
       transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
+.profile {
+  position: relative;
+  color: #ffffff;
+}
+
+.profile::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 94, 215, 0.55); /* Ocean Blue overlay */
+  border-radius: 16px;
+}
+
+.profile > * {
+  position: relative;
+  z-index: 1;
+}
 
     /* Subtle hover zoom */
     .card:hover {
